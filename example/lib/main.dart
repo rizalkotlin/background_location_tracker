@@ -8,11 +8,12 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+//
 @pragma('vm:entry-point')
 void backgroundCallback() {
   BackgroundLocationTrackerManager.handleBackgroundUpdated(
     (data) async {
-      print('update xx repo ${data.lat} ${data.lon}');
+      // print('update xx repo ${data.lat} ${data.lon}');
       return Repo().update(data);
     },
   );
