@@ -2,9 +2,7 @@ group 'com.icapps.background_location_tracker'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    // ext.kotlin_version = '1.6.0'
-    // ext.kotlin_version = '1.9.0'
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.8.22'
     repositories {
         google()
         mavenCentral()
@@ -28,14 +26,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
     lintOptions {
         disable 'InvalidPackage'
